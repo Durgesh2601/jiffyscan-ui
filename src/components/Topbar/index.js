@@ -1,12 +1,17 @@
 import Tabs from "../Tabs";
 import search from "../../assets/search.svg";
 import "./index.css";
+import Filters from "../Filters";
 
 const Topbar = () => {
   return (
     <div className="topbar">
       <div className="left">
         <Tabs />
+        <Filters />
+      </div>
+      <div className="divider">
+
       </div>
       <div className="right">
         <div className="topbar-right-search">

@@ -1,14 +1,18 @@
 .topbar {
-  min-height: 90vh;
   display: flex;
   padding: 1rem;
 }
 
 .topbar .left {
   width: 65%;
-  border-right: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
 }
 
+.divider {
+  border-right: 2px solid #ebebeb;
+  height: 90vh;
+}
 .topbar .right {
   display: flex;
   align-items: flex-start;
@@ -20,16 +24,16 @@
   align-items: center;
   border-radius: 2.5rem;
   padding-left: 3rem;
-  background: #F1F5F9;
+  background: #f1f5f9;
 }
 
 .topbar-input-container input {
   padding: 5px 10px 5px 1.5rem;
   border: none;
   border-radius: 2.5rem;
-  width: 20rem;
+  width: 18rem;
   height: 2.5rem;
-  background: #F1F5F9;
+  background: #f1f5f9;
 }
 
 .topbar-input-container .icon-start {
