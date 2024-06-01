@@ -1,5 +1,6 @@
 import currencyLogo from "../../assets/usdc.svg";
 import trophy from "../../assets/trophy.svg";
+import { TAG_COLORS_MAP } from "../../constants";
 
 const ContentItem = ({ item = null }) => {
   if (!item) return null;
@@ -27,23 +28,30 @@ const ContentItem = ({ item = null }) => {
               <img src={trophy} alt="trophy" />
               1st Place
             </span>
-            {Boolean(item?.filters?.length) &&
-              item?.filters?.map((filter) => (
-                <span class="tag" key={filter}>
-                  {filter}
-                </span>
-              ))}
+            {Boolean(item?.filters?.length) && (
+              <div className="content-filters">
+                {item?.filters?.map((filter) => (
+                  <div
+                    class="tag"
+                    key={filter}
+                    style={{
+                      ...(TAG_COLORS_MAP[filter] || {}),
+                    }}
+                  >
+                    {filter}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div class="meta">
-          <span className="subtext">{item?.organized_date || "--"}</span>
+          <div className="subtext">{item?.organized_date || "--"}</div>
           {item?.participants ? (
-            <>
-              <span>
-                {item?.participants}
-                <span className="subtext"> Participants</span>
-              </span>
-            </>
+            <span className="meta-sub">
+              {item?.participants}
+              <span className="subtext"> Participants</span>
+            </span>
           ) : null}
         </div>
       </div>

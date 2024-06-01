@@ -14,12 +14,15 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     if (!activeTab) return;
-    const filteredData = data.filter((item) => item.status === activeTab);
+    const filteredData = data?.filter((item) => item?.status === activeTab);
+    debugger
     setDataToRender(filteredData);
   }, [activeTab]);
 
   return (
-    <DataContext.Provider value={{ activeTab, setActiveTab, data: dataToRender }}>
+    <DataContext.Provider
+      value={{ activeTab, setActiveTab, data: dataToRender }}
+    >
       {children}
     </DataContext.Provider>
   );

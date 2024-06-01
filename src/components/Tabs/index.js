@@ -15,7 +15,7 @@ const Tabs = () => {
         <div>
           <div className="tab-buttons">
             <button
-              onClick={() => setActiveTab()}
+              onClick={() => setActiveTab(COMPLETED)}
               className={activeTab === COMPLETED ? ACTIVE_KEY : ""}
             >
               Completed
