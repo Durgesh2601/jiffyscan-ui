@@ -3,7 +3,10 @@ export const TABS_KEYS = {
   IN_REVIEW: "in_review",
 };
 
-export const ACTIVE_KEY = "active";
+export const UNIQUE_KEYS = {
+  ACTIVE: "active",
+  ALL: "all",
+};
 
 export const TAG_COLORS_MAP = {
   Design: {
@@ -31,3 +34,12 @@ export const TAG_COLORS_MAP = {
     color: "#5EA8C4",
   },
 };
+
+export const FILTERS = [
+  "Design",
+  "Frontend",
+  "Backend",
+  "Fullstack",
+  "Blockchain",
+  "Content",
+];

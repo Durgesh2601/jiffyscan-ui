@@ -1,6 +1,8 @@
 import { useDataContext } from "../../context/dataContext";
-import { ACTIVE_KEY, TABS_KEYS } from "../../constants";
+import { UNIQUE_KEYS, TABS_KEYS } from "../../constants";
 import "./index.css";
+
+const { ACTIVE } = UNIQUE_KEYS;
 
 const { COMPLETED, IN_REVIEW } = TABS_KEYS;
 const Tabs = () => {
@@ -16,13 +18,13 @@ const Tabs = () => {
           <div className="tab-buttons">
             <button
               onClick={() => setActiveTab(COMPLETED)}
-              className={activeTab === COMPLETED ? ACTIVE_KEY : ""}
+              className={activeTab === COMPLETED ? ACTIVE : ""}
             >
               Completed
             </button>
             <button
               onClick={() => setActiveTab(IN_REVIEW)}
-              className={activeTab === IN_REVIEW ? ACTIVE_KEY : ""}
+              className={activeTab === IN_REVIEW ? ACTIVE : ""}
             >
               In Review
             </button>
