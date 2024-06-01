@@ -6,17 +6,17 @@ const ContentItem = ({ item = null }) => {
   if (!item) return null;
   return (
     <div className="tab-content">
-      <div class="card">
-        <div class="icon">
+      <div className="card">
+        <div className="icon">
           <img src={item?.logo} alt="event-logo" />
         </div>
-        <div class="content">
+        <div className="content">
           <h2>
             {item?.name}
             <small className="subtext v-small"> by </small>
             <small className="subtext">{item?.organizer}</small>
           </h2>
-          <div class="meta">
+          <div className="meta">
             {item?.token?.value ? (
               <span>
                 <img src={currencyLogo} alt="currency" />
@@ -32,7 +32,7 @@ const ContentItem = ({ item = null }) => {
               <div className="content-filters">
                 {item?.filters?.map((filter) => (
                   <div
-                    class="tag"
+                    className="tag"
                     key={filter}
                     style={{
                       ...(TAG_COLORS_MAP[filter] || {}),
@@ -45,7 +45,7 @@ const ContentItem = ({ item = null }) => {
             )}
           </div>
         </div>
-        <div class="meta">
+        <div className="meta">
           <div className="subtext">{item?.organized_date || "--"}</div>
           {item?.participants ? (
             <span className="meta-sub">

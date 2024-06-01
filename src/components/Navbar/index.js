@@ -55,6 +55,7 @@ const Navbar = () => {
             <img src={avatar} alt="Profile" />
             <div className="profile-dropdown">
               <span>Olivia Rhye</span>
+              <p className="email">olivia@jiffyscan.xyz</p>
               <div className="dropdown-content">
                 <div>
                   <img src={user} alt="user" />

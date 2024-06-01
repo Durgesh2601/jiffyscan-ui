@@ -11,14 +11,20 @@ export const useDataContext = () => {
 
 export const DataProvider = ({ children }) => {
   const [dataToRender, setDataToRender] = useState(data);
-  const [selectedFilter, setSelectedFilter] = useState(UNIQUE_KEYS.ALL);
   const [activeTab, setActiveTab] = useState(TABS_KEYS.COMPLETED);
+  const [searchValue, setSearchValue] = useState(null);
+  const [selectedFilter, setSelectedFilter] = useState(UNIQUE_KEYS.ALL);
 
   useEffect(() => {
     if (!activeTab || !selectedFilter) return;
-    const filteredData = getFilteredData(selectedFilter, activeTab, data);
+    const filteredData = getFilteredData(
+      selectedFilter,
+      activeTab,
+      searchValue,
+      data
+    );
     setDataToRender(filteredData);
-  }, [activeTab, selectedFilter]);
+  }, [activeTab, selectedFilter, searchValue]);
 
   return (
     <DataContext.Provider
@@ -28,6 +34,7 @@ export const DataProvider = ({ children }) => {
         data: dataToRender,
         setData: setDataToRender,
         setSelectedFilter,
+        setSearchValue,
       }}
     >
       {children}

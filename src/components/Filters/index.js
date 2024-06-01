@@ -17,8 +17,8 @@ const Filters = () => {
       <div className="filter">
         <img src={filter} alt="filter-icon" />
         <span>Filter By</span>
-        <div class="custom-select-wrapper">
-          <select class="custom-select" onChange={handleFilterChange}>
+        <div className="custom-select-wrapper">
+          <select className="custom-select" onChange={handleFilterChange}>
             <option value="all">All</option>
             {FILTERS.map((filter) => (
               <option key={filter} value={filter}>
