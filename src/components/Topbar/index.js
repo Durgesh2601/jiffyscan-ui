@@ -1,25 +1,32 @@
+import Tabs from "../Tabs";
+import search from "../../assets/search.svg";
+import Filters from "../Filters";
+import { useDataContext } from "../../context/dataContext";
 import "./index.css";
 
 const Topbar = () => {
+  const { setSearchValue } = useDataContext();
   return (
     <div className="topbar">
-      <div className="topbar-profile">
-        <img src="profile-pic.jpg" alt="Profile" />
-        <div className="profile-dropdown">
-          <span>Olivia Rhye</span>
-          <div className="dropdown-content">
-            <a href="/">View profile</a>
-            <a href="/">Dashboard</a>
-            <a href="/">API</a>
-            <a href="/">Log out</a>
+      <div className="left">
+        <Tabs />
+        <Filters />
+      </div>
+      <div className="divider"></div>
+      <div className="right">
+        <div className="topbar-right-search">
+          <div className="topbar-input-container">
+            <span className="icon-start">
+              <img src={search} alt="search" />
+            </span>
+            <input
+              type="text"
+              placeholder="Search Bounties, Profiles, and more..."
+              onChange={(e) => setSearchValue(e.target.value)}
+              onPaste={(e) => setSearchValue(e.target.value)}
+            />
           </div>
         </div>
-      </div>
-      <div className="topbar-search">
-        <input type="text" placeholder="Search Board..." />
-      </div>
-      <div className="topbar-theme-toggle">
-        <button>Toggle Theme</button>
       </div>
     </div>
   );

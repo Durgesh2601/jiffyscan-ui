@@ -1,47 +1,46 @@
 .topbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  padding: 1rem;
 }
 
-.topbar-profile {
+.topbar .left {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  border-right: 2px solid #ebebeb;
+  height: 90vh;
+}
+.topbar .right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.topbar-input-container {
+  position: relative;
   display: flex;
   align-items: center;
+  border-radius: 2.5rem;
+  padding-left: 3rem;
+  background: #f1f5f9;
 }
 
-.topbar-profile img {
-  height: 40px;
-  border-radius: 50%;
+.topbar-input-container input {
+  padding: 5px 10px 5px 1.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  width: 18rem;
+  height: 2.5rem;
+  background: #f1f5f9;
 }
 
-.topbar-profile .profile-dropdown {
-  margin-left: 10px;
-  position: relative;
-}
-
-.topbar-profile .dropdown-content {
-  display: none;
+.topbar-input-container .icon-start {
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  left: 2rem;
 }
 
-.topbar-profile .profile-dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.topbar-search input {
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.topbar-theme-toggle button {
-  padding: 5px 10px;
+.topbar-input-container input:focus {
+  outline: none;
 }

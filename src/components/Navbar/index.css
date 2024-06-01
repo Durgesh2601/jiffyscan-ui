@@ -3,6 +3,13 @@
   align-items: center;
   padding: 0 20px;
   background-color: #f8f9fa;
+  gap: 4rem;
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar-logo {
@@ -27,5 +34,128 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: #000;
+  color: rgb(109, 106, 106);
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 1rem;
+}
+
+.right-profile {
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  justify-content: center;
+}
+
+.right-profile img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.right-profile .profile-dropdown {
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.right-profile .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -3rem;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border: 2px solid #dadce0;
+  padding: 1rem;
+  width: 14.5vw;
+  border-radius: 0.5rem;
+}
+
+.right-profile .profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content div {
+  display: flex;
+  align-items: center;
+  gap: 2rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.dropdown-content div img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #5a5a62;
+}
+
+.right-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 2.5rem;
+  padding-left: 3rem;
+}
+
+.input-container input {
+  padding: 5px 10px 5px 3.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  width: 20rem;
+  height: 2rem;
+}
+
+.input-container .icon-start {
+  position: absolute;
+  left: 1rem;
+}
+
+.input-container .icon-divider {
+  position: absolute;
+  left: 5rem;
+  height: 1.5rem;
+  width: 1px;
+  background-color: #ddd;
+}
+
+.input-container .icon-dropdown {
+  position: absolute;
+  left: 2.8rem;
+  cursor: pointer;
+  top: 0.5rem;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.right-theme-toggle {
+  justify-self: flex-end;
+}
+.right-theme-toggle img {
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.email {
+  font-size: 12px;
+  color: #5a5a62;
+  margin: 0;
+  padding: 0;
 }

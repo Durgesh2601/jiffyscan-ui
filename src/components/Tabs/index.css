@@ -2,22 +2,33 @@
   padding: 20px;
 }
 
+.tabs-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.work-history {
+  border-right: 1px solid #cbd8e9;
+  padding-right: 1rem;
+}
 .tab-buttons {
   display: flex;
   gap: 10px;
 }
 
 .tab-buttons button {
+  border: none;
   padding: 10px 20px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: inherit;
   cursor: pointer;
+  color: #94a3b8;
 }
 
 .tab-buttons .active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #6c63ff;
+  color: black;
 }
 
 .tab-content {
-  margin-top: 20px;
+  margin-top: 1rem;
 }
