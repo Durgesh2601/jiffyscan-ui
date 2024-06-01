@@ -1,35 +1,32 @@
 import { useState } from "react";
+import TabContent from "../TabContent/Content";
 import "./index.css";
-
+import { data } from "../../data";
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState("Work History");
+  const [activeTab, setActiveTab] = useState("completed");
 
   return (
     <div className="tabs">
-      <div className="tab-buttons">
-        <button
-          onClick={() => setActiveTab("Work History")}
-          className={activeTab === "Work History" ? "active" : ""}
-        >
-          Work History
-        </button>
-        <button
-          onClick={() => setActiveTab("Completed")}
-          className={activeTab === "Completed" ? "active" : ""}
-        >
-          Completed
-        </button>
-        <button
-          onClick={() => setActiveTab("In Review")}
-          className={activeTab === "In Review" ? "active" : ""}
-        >
-          In Review
-        </button>
-      </div>
-      <div className="tab-content">
-        {activeTab === "Work History" && <div>Work History Content</div>}
-        {activeTab === "Completed" && <div>Completed Content</div>}
-        {activeTab === "In Review" && <div>In Review Content</div>}
+      <div className="tabs-container">
+        <div>
+          <p className="work-history">Work History</p>
+        </div>
+        <div>
+          <div className="tab-buttons">
+            <button
+              onClick={() => setActiveTab("completed")}
+              className={activeTab === "completed" ? "active" : ""}
+            >
+              Completed
+            </button>
+            <button
+              onClick={() => setActiveTab("In review")}
+              className={activeTab === "In review" ? "active" : ""}
+            >
+              In Review
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

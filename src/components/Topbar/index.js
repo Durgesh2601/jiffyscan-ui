@@ -1,7 +1,7 @@
 import Tabs from "../Tabs";
 import search from "../../assets/search.svg";
-import "./index.css";
 import Filters from "../Filters";
+import "./index.css";
 
 const Topbar = () => {
   return (
@@ -10,9 +10,7 @@ const Topbar = () => {
         <Tabs />
         <Filters />
       </div>
-      <div className="divider">
-
-      </div>
+      <div className="divider"></div>
       <div className="right">
         <div className="topbar-right-search">
           <div className="topbar-input-container">

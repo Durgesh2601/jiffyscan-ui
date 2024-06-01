@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Tabs from "./components/Tabs";
+import TabContent from "./components/TabContent";
 import Topbar from "./components/Topbar";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Topbar />
+      <TabContent />
     </div>
   );
 };
