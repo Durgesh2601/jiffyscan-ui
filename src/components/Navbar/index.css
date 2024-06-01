@@ -37,7 +37,7 @@
   color: rgb(109, 106, 106);
 }
 
-.topbar {
+.right {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,25 +45,25 @@
   gap: 1rem;
 }
 
-.topbar-profile {
+.right-profile {
   display: flex;
   align-items: center;
   width: 15vw;
   justify-content: center;
 }
 
-.topbar-profile img {
+.right-profile img {
   height: 40px;
   border-radius: 50%;
 }
 
-.topbar-profile .profile-dropdown {
+.right-profile .profile-dropdown {
   margin-left: 10px;
   position: relative;
   cursor: pointer;
 }
 
-.topbar-profile .dropdown-content {
+.right-profile .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -77,7 +77,7 @@
   border-radius: 0.5rem;
 }
 
-.topbar-profile .profile-dropdown:hover .dropdown-content {
+.right-profile .profile-dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -98,7 +98,7 @@
   color: #5a5a62;
 }
 
-.topbar-search {
+.right-search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,10 +145,10 @@
   outline: none;
 }
 
-.topbar-theme-toggle {
+.right-theme-toggle {
   justify-self: flex-end;
 }
-.topbar-theme-toggle img {
+.right-theme-toggle img {
   height: 1.5rem;
   cursor: pointer;
 }

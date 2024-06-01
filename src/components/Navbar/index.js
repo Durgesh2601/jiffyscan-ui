@@ -37,8 +37,8 @@ const Navbar = () => {
       </div>
 
       <div>
-        <div className="topbar">
-          <div className="topbar-search">
+        <div className="right">
+          <div className="right-search">
             <div className="input-container">
               <span className="icon-start">
                 <img src={lightning} alt="lightning" />
@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="topbar-profile">
+          <div className="right-profile">
             <img src={avatar} alt="Profile" />
             <div className="profile-dropdown">
               <span>Olivia Rhye</span>
@@ -75,7 +75,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="topbar-theme-toggle">
+          <div className="right-theme-toggle">
             <img src={theme} alt="theme" />
           </div>
         </div>

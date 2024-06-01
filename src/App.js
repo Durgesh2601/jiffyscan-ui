@@ -7,7 +7,6 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Topbar />
-      <Tabs />
     </div>
   );
 };
