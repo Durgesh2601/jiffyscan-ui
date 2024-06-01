@@ -1,0 +1,42 @@
+.topbar {
+  min-height: 90vh;
+  display: flex;
+  padding: 1rem;
+}
+
+.topbar .left {
+  width: 65%;
+  border-right: 1px solid #ebebeb;
+}
+
+.topbar .right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.topbar-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 2.5rem;
+  padding-left: 3rem;
+  background: #F1F5F9;
+}
+
+.topbar-input-container input {
+  padding: 5px 10px 5px 1.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  width: 20rem;
+  height: 2.5rem;
+  background: #F1F5F9;
+}
+
+.topbar-input-container .icon-start {
+  position: absolute;
+  left: 2rem;
+}
+
+.topbar-input-container input:focus {
+  outline: none;
+}
