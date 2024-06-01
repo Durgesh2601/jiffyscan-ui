@@ -23,6 +23,7 @@ export const data = [
     ],
     participants: 36,
     organized_date: "04/04/2023",
+    status: "completed",
   },
   {
     id: 2,
@@ -37,6 +38,7 @@ export const data = [
     filters: ["Design"],
     participants: 7,
     organized_date: "21/03/2023",
+    status: "completed",
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const data = [
     filters: ["Frontend", "Backend", "Blockchain"],
     participants: 20,
     organized_date: "14/03/2023",
+    status: "in_review",
   },
   {
     id: 4,
@@ -65,5 +68,6 @@ export const data = [
     filters: ["Content"],
     participants: 12,
     organized_date: "06/03/2023",
+    status: "in_review",
   },
 ];

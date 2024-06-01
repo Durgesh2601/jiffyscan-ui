@@ -1,9 +1,10 @@
-import { useState } from "react";
-import TabContent from "../TabContent/Content";
+import { useDataContext } from "../../context/dataContext";
+import { ACTIVE_KEY, TABS_KEYS } from "../../constants";
 import "./index.css";
-import { data } from "../../data";
+
+const { COMPLETED, IN_REVIEW } = TABS_KEYS;
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState("completed");
+  const { activeTab, setActiveTab } = useDataContext();
 
   return (
     <div className="tabs">
@@ -14,14 +15,14 @@ const Tabs = () => {
         <div>
           <div className="tab-buttons">
             <button
-              onClick={() => setActiveTab("completed")}
-              className={activeTab === "completed" ? "active" : ""}
+              onClick={() => setActiveTab()}
+              className={activeTab === COMPLETED ? ACTIVE_KEY : ""}
             >
               Completed
             </button>
             <button
-              onClick={() => setActiveTab("In review")}
-              className={activeTab === "In review" ? "active" : ""}
+              onClick={() => setActiveTab(IN_REVIEW)}
+              className={activeTab === IN_REVIEW ? ACTIVE_KEY : ""}
             >
               In Review
             </button>

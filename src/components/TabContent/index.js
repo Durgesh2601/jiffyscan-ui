@@ -1,8 +1,9 @@
-import { data } from "../../data";
+import { useDataContext } from "../../context/dataContext";
 import ContentItem from "./Content";
 import "./index.css";
 
-const TabContent = ({}) => {
+const TabContent = () => {
+  const { data } = useDataContext();
   return (
     <div className="content-container">
       {data?.length > 0 &&

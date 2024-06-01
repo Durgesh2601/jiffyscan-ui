@@ -1,13 +1,16 @@
-import Navbar from "./components/Navbar";
+import { DataProvider } from "./context/dataContext";
 import TabContent from "./components/TabContent";
+import Navbar from "./components/Navbar";
 import Topbar from "./components/Topbar";
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
-      <Topbar />
-      <TabContent />
+      <DataProvider>
+        <Navbar />
+        <Topbar />
+        <TabContent />
+      </DataProvider>
     </div>
   );
 };
