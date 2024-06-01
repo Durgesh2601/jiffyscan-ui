@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Jiffy Labs UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a part of the Jiffy Labs coding assignment. It demonstrates the ability to deliver a project with a focus on micro interactions, including:
 
-## Available Scripts
+- Tab switch between "Completed" and "In Review"
+- Hover effects on the hackathon cards
+- Filter by tabs containing Design, Frontend, Backend, Blockchain, Content
+- Dropdown on profile click
 
-In the project directory, you can run:
+## Project Links
 
-### `npm start`
+- **Deployed Link**: [https://jiffyscan-ui.vercel.app/](https://jiffyscan-ui.vercel.app/)
+- **Repository Link**: [https://github.com/Durgesh2601/jiffyscan-ui](https://github.com/Durgesh2601/jiffyscan-ui)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get a local copy up and running, follow these simple steps.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You need to have Node.js and npm installed on your local machine. You can download them from [Node.js official website](https://nodejs.org/).
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Durgesh2601/jiffyscan-ui.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Project Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Start the development server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Open your browser and navigate to**
 
-## Learn More
+```
+http://localhost:3000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project structure follows a typical React application with the following main directories and files:
 
-### Code Splitting
+- `components/` - Contains React components
+- `context/` - Contains context provider
+- `App.js` - Main application component
+- `index.js` - Entry point for the React application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features
 
-### Analyzing the Bundle Size
+### Tabs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Switch between "Completed" and "In Review" tabs to filter hackathon data.
 
-### Making a Progressive Web App
+### Hover Effects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Hover effects on hackathon cards to enhance user interaction.
 
-### Advanced Configuration
+### Filter by Category
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Filter hackathons by categories like Design, Frontend, Backend, Blockchain, and Content.
 
-### Deployment
+### Profile Dropdown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Click on the profile to see a dropdown menu.
 
-### `npm run build` fails to minify
+### Search Button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Search button with different states:
+  - Default
+  - On hover
+  - On select
+  - On pasting address (ctrl+V)
+
+## Contact
+
+If you have any questions, feel free to reach out to me at [dk829445@gmail.com](mailto:dk829445@gmail.com).
